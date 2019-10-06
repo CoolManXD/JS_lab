@@ -1,0 +1,13 @@
+hr {
+    border: 20px solid black;
+    /* margin-top: 100px;
+    border-style: dashed; */
+}
+
+#sizeHR, #styleHR, #posHR {
+    display: block;
+    width: 20%;
+}
+fieldset {
+    display: inline-block;
+}

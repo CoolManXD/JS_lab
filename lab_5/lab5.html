@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="code_lab5.js"></script>
+    <h1>Lab5</h1>
+    <!-- <label>5px<input type="radio" name="size" value="5" onClick="changeHR(sizeHR.querySelectorAll(input))" checked> </label> -->
+    <form id="form1">
+        <fieldset id="sizeHR">
+            <legend>Size</legend>
+            <label>5px<input type="radio" name="size" value="5" onClick="changeHR('size',sizeHR.querySelectorAll('input')[0].value)" checked> </label>
+            <label>10px<input type="radio" name="size" value="10" onClick="changeHR('size',sizeHR.querySelectorAll('input')[1].value)"> </label>
+            <label>15px<input type="radio" name="size" value="15" onClick="changeHR('size',sizeHR.querySelectorAll('input')[2].value)"> </label>
+        </fieldset>
+        <fieldset id="styleHR">
+            <legend>Style</legend>
+            <label>Solid<input type="radio" name="style" value="solid" onClick="changeHR('style',styleHR.querySelectorAll('input')[0].value)" checked> </label>
+            <label>Dashed<input type="radio" name="style" value="dashed" onClick="changeHR('style',styleHR.querySelectorAll('input')[1].value)"> </label>
+            <label>Dotted<input type="radio" name="style" value="dotted" onClick="changeHR('style',styleHR.querySelectorAll('input')[2].value)"> </label>
+        </fieldset>
+        <fieldset id="posHR">
+            <legend>Pos</legend>
+            <label>0px<input type="radio" name="pos" value="0" onClick="changeHR('pos',posHR.querySelectorAll('input')[0].value)" checked> </label>
+            <label>50px<input type="radio" name="pos" value="50" onClick="changeHR('pos',posHR.querySelectorAll('input')[1].value)"> </label>
+            <label>100px<input type="radio" name="pos" value="100" onClick="changeHR('pos',posHR.querySelectorAll('input')[2].value)"> </label>
+        </fieldset>
+
+    </form>
+    <hr id="unic">
+    <br><br>
+    <form id="fillingProfile" onsubmit="return false;">
+        <fieldset id="chooseSex">
+            <legend>Sex</legend>
+            <label>male<input type="radio" name="sex" value="male" required> </label>
+            <label>female<input type="radio" name="sex" value="female"></label>
+        </fieldset>
+        <fieldset id="chooseAge">
+            <legend>Age</legend>
+            <label><input type="text" name="age" value="" required> </label>
+        </fieldset>
+        <fieldset id="chooseStatus">
+                <legend>Marital status</legend>
+                <label>married<input type="radio" name="status" value="married" required> </label>
+                <label>not married<input type="radio" name="status" value="not-married"></label>
+        </fieldset>
+        <input type="submit" value="Fill profile" onClick="fillProfile(fillingProfile.querySelectorAll('input'), profile.querySelectorAll('input'))">
+    </form>
+    <form>
+        <fieldset id="profile">
+            <legend>Profile</legend>
+            <label>Sex<input type="text" name="sex"></label>
+            <label>Age<input type="text" name="age"></label>
+            <label>Marital<input type="text" name="status"></label>
+        </fieldset>
+    </form>
+</body>
+
+</html>
