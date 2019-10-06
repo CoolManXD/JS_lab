@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="code_lab4.js"></script>
+    <div id="menu">
+        <div id="arrow1"></div>
+        <div id="arrow2"></div>
+        <div id="arrow3"></div>
+        <div onmouseover="setArrow('arrow1',1)" onmouseout="setArrow('arrow1',0)">Menu item №1</div>
+        <div onmouseover="setArrow('arrow2',1)" onmouseout="setArrow('arrow2',0)">Menu item №2</div>
+        <div onmouseover="setArrow('arrow3',1)" onmouseout="setArrow('arrow3',0)">Menu item №3</div>
+    </div>
+    <br><br>
+    <div id="gallery">
+        <img src="ball1.jpg">
+        <img src="ball2.jpg">
+        <img src="ball3.jpg">
+    </div>
+    <form name="form">
+        <input type="number" name="num" placeholder="Number of the picture"> <br>
+        <input type="button" value="Insert" onClick="insertPicture(document.form.num.value)"> <br>
+    </form>
+    <br><br>
+    <img src="ball1.jpg" id="picture" onmouseover="resizePicture('picture',1)" onmouseout="resizePicture('picture',0)">
+
+</body>
+
+</html>
