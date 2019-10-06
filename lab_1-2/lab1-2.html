@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>Lab1</h1>
+    <script src="code_lab1.js"></script>
+    <script src="code_lab2.js"></script>
+    <h1>Lab2</h1>
+    <form name="form1">
+        Основа: <input type="text" size=5 name="param1"><br>
+        Висота: <input type="text" size=5 name="param2"><br>
+        <input type="button" value=Обчислити onClick="square(document.form1.param1.value, document.form1.param2.value)">
+        По кліку миші на кнопці в функцію areа передаються два параметри - вміст
+        полів вводу
+    </form>
+    <br>
+    <form name="form2">
+        Сторона: <input type="text" size=7 name="num1" onChange="square_rec(form2)"><br>
+        Площа квадрата: <input type="text" size=7 name="res"><br>
+        <input type="reset" value=Оновити>
+    </form>
+    <br>
+    <form name="form3">
+        x1: <input type="text" name="x1"><br>
+        y1: <input type="text" name="y1"><br>
+        x2: <input type="text" name="x2"><br>
+        y2: <input type="text" name="y2"><br>
+        x3: <input type="text" name="x3"><br>
+        y3: <input type="text" name="y3"><br>
+        Площа трикутника (focus) : <input type="text" size=10 name="res" onfocus="geron(form3)"><br>
+    </form>
+    <br>
+
+    <form name="form4">
+        x: <input type="text" name="x"><br>
+        y: <input type="text" name="y"><br>
+        Відстань точки до початку координат (select) : <input type="text" name="res" value="select" onselect="distance(form4)"><br>
+    </form>
+    <br>
+    <form name="form5">
+        (blur) <br>
+        Number №1: <input type="text" name="number1"><br>
+        Number №2: <input type="text" name="number2" placeholder="blur" onblur="exchange(form5)"><br>
+    </form>
+</body>
+
+</html>
