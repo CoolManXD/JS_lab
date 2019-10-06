@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="code_lab7.js"></script>
+    <h1>Lab7</h1>
+    <table id="mainTable">
+        <select id="mainSet" name="bgTable" size="4" multiple
+            onChange="setBgTable(document.querySelector(`[name='bgTable']`))">
+            <option value="red">Red
+            <option value="green">Green
+            <option value="blue">Blue
+            <option value="image.jpg">Image
+        </select>
+        <tr>
+            <td>
+                <select name="cell11" onChange="setColorCell(document.querySelector(`[name='cell11']`))">
+                    <option value="red">Red
+                    <option value="green">Green
+                    <option value="blue">Blue
+                </select>
+            </td>
+            <td>
+                <select name="cell12" onChange="setColorCell(document.querySelector(`[name='cell12']`))">
+                    <option value="red">Red
+                    <option value="green">Green
+                    <option value="blue">Blue
+                </select>
+            </td>
+            <td>
+                <select name="cell13" onChange="setColorCell(document.querySelector(`[name='cell13']`))">
+                    <option value="red">Red
+                    <option value="green">Green
+                    <option value="blue">Blue
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select name="cell21" onChange="setColorCell(document.querySelector(`[name='cell21']`))">
+                    <option value="red">Red
+                    <option value="green">Green
+                    <option value="blue">Blue
+                </select>
+            </td>
+            <td>
+                <select name="cell22" onChange="setColorCell(document.querySelector(`[name='cell22']`))">
+                    <option value="red">Red
+                    <option value="green">Green
+                    <option value="blue">Blue
+                </select>
+            </td>
+            <td>
+                <select name="cell23" onChange="setColorCell(document.querySelector(`[name='cell23']`))">
+                    <option value="red">Red
+                    <option value="green">Green
+                    <option value="blue">Blue
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select name="cell31" onChange="setColorCell(document.querySelector(`[name='cell31']`))">
+                    <option value="red">Red
+                    <option value="green">Green
+                    <option value="blue">Blue
+                </select>
+            </td>
+            <td>
+                <select name="cell32" onChange="setColorCell(document.querySelector(`[name='cell32']`))">
+                    <option value="red">Red
+                    <option value="green">Green
+                    <option value="blue">Blue
+                </select>
+            </td>
+            <td>
+                <select name="cell33" onChange="setColorCell(document.querySelector(`[name='cell33']`))">
+                    <option value="red">Red
+                    <option value="green">Green
+                    <option value="blue">Blue
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <hr>
+    <br><br>
+    <form id="VegetableUniverse" onsubmit="return false;">
+        <fieldset>
+            <legend>Vegetable Universe</legend>
+            Goods
+            <select name="goods" required>
+                <option value="cucumber">Сucumber
+                <option value="tomato">Tomato
+                <option value="carrot">Carrot
+            </select>
+            Price (1kg)
+            <select name="price" required>
+                <option value="5">5$
+                <option value="10">10$
+                <option value="15">15$
+            </select>
+            Quantity (kg)
+            <select name="quantity" required>
+                <option value="1">1kg
+                <option value="2">2kg
+                <option value="3">3kg
+                <option value="4">4kg
+                <option value="5">5kg
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Receipt</legend>
+            <input type="submit" value="Count" onclick="countPrice(document.getElementById('VegetableUniverse'))">
+            <input type="text" name="receipt" value="" placeholder="price">
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

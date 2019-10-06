@@ -1,0 +1,25 @@
+#mainSet {
+  margin-left: 90px;
+  width: 100px;
+}
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px 20px;
+    width: 500px;
+    height: 300px;
+  } 
+td {
+    border: 1px solid #000;
+  }
+
+#VegetableUniverse select {
+    display: inline-block;
+}
+
+fieldset {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
