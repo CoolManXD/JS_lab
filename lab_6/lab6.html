@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="code_lab6.js"></script>
+    <h1>Lab6</h1>
+    <form id="form" onsubmit="return false;">
+        <fieldset id="programming">
+            <legend>Programming C++</legend>
+            Programming C++<input type="checkbox" name="subject" value="1000" >  <br>
+            1 Month<input type="radio" name="dur1" value="250" checked required> 
+            2 Month<input type="radio" name="dur1" value="500"> <br>
+            Ukrainian<input type="radio" name="language1" value="100" checked required> 
+            English<input type="radio" name="language1" value="300" > 
+          
+        </fieldset>
+        <fieldset id="discreteMath">
+            <legend>Discrete Math</legend>
+            Discrete Math<input type="checkbox" name="subject" value="500" > <br>
+            1 Month<input type="radio" name="dur2" value="100" checked required> 
+            2 Month<input type="radio" name="dur2" value="200">  <br>
+            Ukrainian<input type="radio" name="language2" value="100" checked required> 
+            English<input type="radio" name="language2" value="300" > 
+        </fieldset>
+        <fieldset id="highMath">
+            <legend>High Math</legend>
+            High Math<input type="checkbox" name="subject" value="750" >  <br>
+            1 Month<input type="radio" name="dur3" value="200" checked required> 
+            2 Month<input type="radio" name="dur3" value="400">  <br>
+            Ukrainian<input type="radio" name="language3" value="100" checked required>
+            English<input type="radio" name="language3" value="300" > 
+        </fieldset>
+        <br>
+        <input type="submit" value="Сalculate the price" onClick="calculate()">
+        <input type="text" name="price" value="">
+    </form>
+    <br><br>
+</body>
+
+</html>
