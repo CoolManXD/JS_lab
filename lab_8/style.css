@@ -1,0 +1,9 @@
+fieldset {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#task1 input {
+    float: right;
+}
