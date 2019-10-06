@@ -1,0 +1,16 @@
+fieldset {
+    display: inline-block;
+    width: 200px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+label {
+    width: 180px;
+}
+
+label input {
+    float: right;
+    width: 120px;
+}
