@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onLoad="load()">
+    <script src="code_lab11.js"></script>
+    <h1>Lab11</h1>
+    <div>
+        <img src="ball1.jpg">
+    </div>
+    <input type="button" name="animation" value="Animation" onClick="animation()">
+    <br><br>
+    <form id="form1" onsubmit="return false;">
+        <fieldset id="positive">
+            <legend>Couting positive elements</legend>
+            <textarea name="array1" placeholder="enter array of numbers"></textarea>
+            <br><br>
+            <input type="submit" value="Count" onClick="countPositive()">
+            <br><br>
+            Quantity:<input type="number" name="quantity">
+        </fieldset>
+    </form>
+
+    <form id="form2" onsubmit="return false;">
+        <fieldset id="serchingMax">
+            <legend>Searching max element</legend>
+            <textarea name="array2" placeholder="enter array of numbers"></textarea>
+            <br><br>
+            <input type="submit" value="Search" onClick="searchMax()"> 
+            <br><br>
+            Max element:<input type="number" name="max">
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
