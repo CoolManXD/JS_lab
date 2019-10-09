@@ -1,7 +1,10 @@
 function calculateWords() {
     let str = form1.querySelector("[name='someText1']").value;
     let arr = str.split(' ');
-    let quantity = arr.length;
+    let quantity = 0;
+    for (let value of arr)
+        if (value != "") quantity++;
+    // let quantity = arr.length;
     form1.querySelector("[name='quantityWords']").value = quantity;
 }
 
