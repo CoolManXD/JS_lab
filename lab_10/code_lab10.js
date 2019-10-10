@@ -3,7 +3,7 @@ function calculateWords() {
     let arr = str.split(' ');
     let quantity = 0;
     for (let value of arr)
-        if (value != "") quantity++;
+        if (value) quantity++;
     // let quantity = arr.length;
     form1.querySelector("[name='quantityWords']").value = quantity;
 }
@@ -38,16 +38,26 @@ function replaceWords() {
 
 function deleteSpaces() {
     let data = form3.querySelectorAll("textarea");
-    let str = data[0].value;
-    let newStr = "";
-    let from = 0;
-    while (true) {
-        let to = str.indexOf(" ", from);
-        if (to == -1) break;
-        if (to != from)
-            newStr += str.slice(from, to) + " ";
-        from = to + 1;
-    }
-    newStr += str.slice(from);
-    data[1].value = newStr;
+
+
+    let str = data[0].value.split(" ");
+    str = str.reduce(function (newStr, current) {
+        if (current) return newStr + current + " ";
+        else return newStr;
+    }, "");
+    
+    // let str = data[0].value;
+    // let newStr = "";
+    // let from = 0;
+    // while (true) {
+    //     let to = str.indexOf(" ", from);
+    //     if (to == -1) break;
+    //     if (to != from)
+    //         newStr += str.slice(from, to) + " ";
+    //     from = to + 1;
+    // }
+    // newStr += str.slice(from);
+
+    data[1].value = str;
+    // data[1].value = newStr;
 }
